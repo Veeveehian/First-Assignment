@@ -1,7 +1,14 @@
 import React from 'react'
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import logo from './assets/logo.png'
 import library from './assets/library.png'
 import basketball from './assets/basketball.png'
+import cafeteria from './assets/cafeteria.png'
+import london from './assets/london.png'
+import newyork from './assets/newyork.png'
+import washington from './assets/washington.png'
+import user1 from './assets/user1.jpg'
+import user2 from './assets/user2.jpg'
 
 const App = () => {
   return (
@@ -11,7 +18,7 @@ const App = () => {
           <nav>
             <a href="index.html"> <img src={logo}/></a>
             <div className="nav-links" id="navLinks">
-                {/* <i className="fa fa-times" onClick="hideMenu()"></i> */}
+                <i className="fa fa-times"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -20,7 +27,7 @@ const App = () => {
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
-            {/* <i className="fa fa-bars" onClick="ShowMenu()"}></i> */}
+            <i className="fa fa-bars"></i>
           </nav>
           <div className="text-box">
             <h1>World's Biggest University</h1>
@@ -59,19 +66,19 @@ const App = () => {
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <div className="row">
                 <div className="campus-col">
-                    <img src="./london.png" alt=""/>
+                    <img src={london} alt=""/>
                     <div className="layer">
                         <h3>LONDON</h3>
                     </div>
                 </div>
                 <div className="campus-col">
-                    <img src="./newyork.png" alt=""/>
+                    <img src={newyork} alt=""/>
                     <div className="layer">
                         <h3>NEW YORK</h3>
                     </div>
                 </div>
                 <div className="campus-col">
-                    <img src="./washington.png" alt=""/>
+                    <img src={washington} alt=""/>
                     <div className="layer">
                         <h3>WASHINGTON</h3>
                     </div>
@@ -94,7 +101,7 @@ const App = () => {
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
             <div className="facilities-col">
-                <img src="./cafeteria.png" alt=""/>
+                <img src={cafeteria} alt=""/>
                 <h3>Tasty And Healthy Food</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
@@ -106,7 +113,7 @@ const App = () => {
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             <div className="row">
                 <div className="testimonial-col">
-                    <img src="./user1.jpg"/>
+                    <img src={user1}/>
                     <div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                             Numquam ut maiores similique suscipit explicabo, dicta, 
@@ -121,7 +128,7 @@ const App = () => {
                     </div>
                 </div>
                 <div className="testimonial-col">
-                    <img src="./user2.jpg"/>
+                    <img src={user2}/>
                     <div>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
                             Numquam ut maiores similique suscipit explicabo, dicta, 
@@ -150,12 +157,12 @@ const App = () => {
             a non provident aspernatur minus id voluptas omnis amet<br/> 
             temporibus praesentium doloremque quo ratione quos?</p>
             <div className="icons">
-                <i className="fa fa-facebook" aria-hidden="true"></i>
-                <i className="fa fa-twitter"></i>
-                <i className="fa fa-instagram"></i>
-                <i className="fa fa-linkedin"></i>
+                <i className="fa-brands fa-facebook" aria-hidden="true"></i>
+                <i className="fa-brands fa-twitter"></i>
+                <i className="fa-brands fa-instagram"></i>
+                <i className="fa-brands fa-linkedin"></i>
             </div>
-            <p>Made With <i className="fa fa-heart-o"></i>By Easy Tutorials</p>
+            <p>Made With <i className="fa-regular fa-heart"></i>By Easy Tutorials</p>
         </section>
 
     </div>
