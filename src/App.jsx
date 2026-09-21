@@ -9,8 +9,14 @@ import newyork from './assets/newyork.png'
 import washington from './assets/washington.png'
 import user1 from './assets/user1.jpg'
 import user2 from './assets/user2.jpg'
+import {useState} from 'react';
+
 
 const App = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+    const showMenu = () => {setMenuOpen (true)};
+    const hideMenu = () => {setMenuOpen(false)}; 
+
   return (
     <div>
 
@@ -18,7 +24,7 @@ const App = () => {
           <nav>
             <a href="index.html"> <img src={logo}/></a>
             <div className="nav-links" id="navLinks">
-                <i className="fa fa-times"></i>
+                <i className="fa fa-times" onClick={hideMenu}></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">ABOUT</a></li>
@@ -27,7 +33,7 @@ const App = () => {
                     <li><a href="">CONTACT</a></li>
                 </ul>
             </div>
-            <i className="fa fa-bars"></i>
+            <i className="fa fa-bars" onClick={showMenu}></i>
           </nav>
           <div className="text-box">
             <h1>World's Biggest University</h1>
